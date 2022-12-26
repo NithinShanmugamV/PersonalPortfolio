@@ -277,6 +277,31 @@
 
 /*==================== SKILLS ====================*/
 
+.skills__container {
+    row-gap: 2rem;
+}
+.skills__title {
+    margin-bottom: var(--mb-3);
+}
+.skills__subtitle {
+    color: var(--first-color);
+    margin-bottom: var(--mb-3);
+}
+
+.skills__name {
+    display: inline-block;
+    font-size: var(--small-font-size);
+    margin-right: var(--mb-2);
+    margin-bottom: var(--mb-3);
+    padding: 0.25rem .5rem;
+    background-color: var(--second-color);
+    border-radius: .25rem;
+}
+.skills__name:hover {
+    background-color: var(--title-color);
+    color: var(--white-color);
+}
+
 
 /*==================== QUALIFICATION ====================*/
 .qualification__tabs {
@@ -525,6 +550,11 @@
     }
     .about__buttons {
         justify-content: initial;
+    }
+
+    .skills__container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
     }
     .qualification__tabs {
         justify-content: center;
